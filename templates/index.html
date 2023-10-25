@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Showcase</title>
+</head>
+<body>
+
+<h1>Top 10 Query Results</h1>
+
+<h2># 10 Maximum Profit by State</h2>
+<table border="1">
+    <tr>
+        <th>State</th>
+        <th>Max Profit</th>
+    </tr>
+    {% for row in data %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2># 9 Total Profit and Marketing by Market</h2>
+<table border="1">
+    <tr>
+        <th>Market</th>
+        <th>Total Profit</th>
+        <th>Total Marketing</th>
+    </tr>
+    {% for row in data2 %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2># 8 Correlation Between Total Expenses and Profit in Each Market Size</h2>
+<table border="1">
+    <tr>
+        <th>Market</th>
+        <th>Correlation</th>
+    </tr>
+    {% for row in data3 %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2># 7 Product Types That Have Seen Sales Growth Over Time and how much</h2>
+<table border="1">
+    <tr>
+        <th>Product</th>
+        <th>Growth</th>
+    </tr>
+    {% for row in data4 %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2># 6 COGS Are Different From Budget COGS and show by how much is the difference</h2>
+<table border="1">
+    <tr>
+        <th>States</th>
+        <th>Difference</th>
+    </tr>
+    {% for row in data5 %}
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<h2># 5 Average Inventory for Each Product Type in Each State</h2>
+<table border="1">
+    <tr>
+        <th>State</th>
+        <th>Product Type</th>
+        <th>Average Inventory</th>
+    </tr>
+    {% for item in data6 %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<h2># 3 Top 5 States with Highest Sales</h2>
+<table border="1">
+    <tr>
+        <th>State</th>
+        <th>Sales</th>
+    </tr>
+    {% for item in data7 %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<h2># 2 Highest selling product in each market and what is the profit and Total Expenses</h2>
+<table border="1">
+    <tr>
+        <th>Markets</th>
+        <th>Product</th>
+        <th>Highest Sales</th>
+        <th>Profit</th>
+        <th>Total Expenses</th>
+    </tr>
+    {% for item in data8 %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<h2># 1 Most Profitable Markets in Each State</h2>
+<table border="1">
+    <tr>
+        <th>Markets</th>
+        <th>Profit</th>
+    </tr>
+    {% for item in data9 %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+
+</body>
+</html>
